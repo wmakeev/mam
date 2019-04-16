@@ -1,18 +1,24 @@
 {
 	"compilerOptions": {
-		"target": "ES5",
+		"target": "ES2017",
 		"jsx": "react",
 		"jsxFactory": "$mol_dom_jsx",
+		"module": "commonjs",
+		"moduleResolution": "node",
 		"experimentalDecorators": true,
 		"noImplicitAny": true,
 		"suppressImplicitAnyIndexErrors": true,
+		"alwaysStrict": true,
+		"allowUnusedLabels": true,
 		"removeComments" : true ,
 		"sourceMap" : true ,
 		"inlineSources" : true ,
-		"declaration" : true
+		"declaration" : true,
+		"types" : ["node"]
 	},
 	"include": [
-		"**/*.ts"
+		"**/*.ts",
+		"**/*.tsx"
 	],
 	"exclude": [
 		"node_modules",

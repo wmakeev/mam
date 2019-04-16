@@ -1,8 +1,7 @@
 {
   "description": "Simple MAM project",
-  "dependencies": {},
   "scripts": {
-    "postinstall": "echo Type 'npm start' to start dev server or 'npm start {relative/path}' to build some package.",
+    "postinstall": "echo Type 'npm start' to start dev server or 'npm start {relative/path}+' to build some packages.",
     "prestart": "mam mol/build",
     "start": "node ./mol/build/-/node.test.js",
     "mam": "mam"
@@ -28,18 +27,21 @@
     "last 1 versions"
   ],
   "devDependencies": {
-    "body-parser": "^1.17.2",
-    "compression": "^1.6.2",
-    "concat-with-sourcemaps": "^1.0.4",
-    "express": "^4.15.3",
-    "jsdom": "^9.8.3",
-    "mam": "^1.5.0",
-    "pdfjs-dist": "^1.8.448",
-    "portastic": "^1.0.1",
-    "postcss": "^5.1.2",
-    "postcss-cssnext": "^2.11.0",
-    "serve-index": "^1.9.0",
-    "source-map-support": "^0.4.2",
-    "typescript": "^2.4.0"
+    "@types/node": "9.*.*",
+    "body-parser": "*",
+    "chokidar": "*",
+    "compression": "*",
+    "concat-with-sourcemaps": "*",
+    "express": "*",
+    "jsdom": "*",
+    "mam": "*",
+    "pdfjs-dist": "*",
+    "portastic": "*",
+    "postcss": "^5.2.18",
+    "postcss-color-function": "^4.0.1",
+    "postcss-custom-properties": "^7.0.0",
+    "serve-index": "*",
+    "source-map-support": "*",
+    "typescript": "*"
   }
 }
